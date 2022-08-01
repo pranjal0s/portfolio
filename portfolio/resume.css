@@ -1,0 +1,206 @@
+body{
+    margin: 0px;
+    background-color: rgb(30, 29, 29);
+}
+
+/* body header */
+#body-header{
+    height: 65vh;
+    background-image: url("C:/Users/pranjal/OneDrive/Documents/web dev/portfolio/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    background-attachment: fixed;
+}
+
+/* horizontal list */
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 4s;
+    font-size: large;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav-menu li a:hover{
+    color: #6F5ADC;
+    border-bottom: 1px white;
+} 
+
+.text-center{
+    text-align: center;
+}
+
+/* name and social icons */
+
+#name-social-container{
+    margin-top: 20vh;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+#my-name:hover{
+    color: #6f5adc;
+    border-bottom: 1px white;
+    transition: color 1s, border-bottom 4s;
+}
+
+.social-icons li a{
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 60%;
+}
+
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgb(208, 47, 22);
+    border-radius: 60%;
+    border: 1px;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;  
+    align-items: center; 
+}
+
+section:nth-child(2n){
+    background-color: #36323C;
+}
+section:nth-child(2n+1){
+    background-color: #1E1A20;
+}
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    margin: 10px auto;
+    font-weight: 700;
+    
+}
+
+.section-heading span{
+    font-size: xx-large;
+    display: inline-block;
+    padding-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #6f5adc;
+}
+  
+/* about and image sec */
+
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -12vh;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+#para{
+    margin: 2px 2px 2px 2px;
+    line-height: 2em;
+    width:100vw;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    border-radius: 3%;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+#para u:hover{
+    color: #6F5ADC;
+    border-bottom: 1px white;
+    transition: color 1s, border-bottom 4s;
+}
+
+/* skills section */
+
+.skills-display{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills-progress{
+    background-color: #000;
+    border-radius: 0.8rem;
+    height: 1.5rem;
+    width: 7rem;
+}
+
+.skills-progress>div{
+    border-radius: 0.8rem;
+}
+
+.skill-name span{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+
+/* common margin class */
+
+.mb75px{
+    margin-bottom: 75px;
+}
+
+/* percentage */
+.eighty-five-percent{
+    width: 85%;
+    height: inherit;
+}
+
+.eighty-percent{
+    width: 80%;
+    height: inherit;
+}
+
+/* colors */
+
+.mb-green{
+    background-color: #66BD6D;
+}
+
+.mb-blue{
+    background-color: #6CC1FA;
+}
