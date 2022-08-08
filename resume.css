@@ -1,9 +1,9 @@
 body{
-    margin: 0px;
+    margin: 5px 5px;
     background-color: rgb(30, 29, 29);
 }
 
-/* body header */
+                                    /* body header */
 #body-header{
     height: 65vh;
     background-image: url("/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg");
@@ -13,7 +13,7 @@ body{
     background-attachment: fixed;
 }
 
-/* horizontal list */
+                                /* horizontal list */
 .horizontal-list{
     list-style: none;
     padding-left: 0px;
@@ -47,7 +47,7 @@ body{
     text-align: center;
 }
 
-/* name and social icons */
+                                /* name and social icons */
 
 #name-social-container{
     margin-top: 20vh;
@@ -109,7 +109,7 @@ section:nth-child(2n+1){
     color: #6f5adc;
 }
   
-/* about and image sec */
+                            /* about and image section */
 
 #about{
     height: auto;
@@ -148,7 +148,7 @@ section:nth-child(2n+1){
     transition: color 1s, border-bottom 4s;
 }
 
-/* skills section */
+                                /* skills section */
 
 .skills-display{
     width: 80%;
@@ -183,6 +183,155 @@ section:nth-child(2n+1){
     vertical-align: middle;
 }
 
+                                /* Work Experience */
+
+.timeline {
+    position: relative;
+    width: 75%;
+}
+
+.timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: lightgrey;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+
+.timeline-container {
+    padding: 8px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
+    width: 100%;
+}
+
+#timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 1px dashed #24e86fd9;
+    height: 66%;
+    color: #433E3F;
+}
+
+#timeline-divider .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+#timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #1ce1ef;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+/* Portfolio Section */
+
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+}
 
 
 /* contact sec */
